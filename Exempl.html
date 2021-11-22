@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Abas com CSS3 animada</title>
+    <link rel="stylesheet" href="Exempl.css">
+  </head>
+ 
+  <body>
+    <div class="tab">
+      <input type="radio" name="tabs" id="tab1" checked>
+      <label for="tab1">Cronômetro</label>
+ 
+      <input type="radio" name="tabs" id="tab2">
+      <label for="tab2">Slide Show</label>
+ 
+      <input type="radio" name="tabs" id="tab3">
+      <label for="tab3">Tabuada</label>
+ 
+      
+ 
+      <div class="tabs">
+        <div class="content">
+          <h2>Cronônometro</h2>
+          <form name="form_main">
+            <div>
+              <span id="hour">00</span>:<span id="minute">00</span>:<span id="second">00</span>:<span id="millisecond">000</span>
+            </div>
+          
+            <br />
+          
+            <button type="button" name="start">start</button>
+            <button type="button" name="pause">pause</button>
+            <button type="button" name="reset">reset</button>
+          </form>
+        </div>
+         
+        <div class="content">
+          <h2>Slide Show</h2>
+          <div class="w3-content" style="max-width:300px">
+            <img class="mySlides" src="Imagens/road-210913_1920-e1617756355766-1024x683.jpg" style="width:100%">
+            <img class="mySlides" src="Imagens/Papel-de-Parede-de-Paisagem.jpg" style="width:100%">
+            <img class="mySlides" src="Imagens/destacada_paisagens2-690x350.jpg" style="width:100%">
+            <img class="mySlides" src="Imagens/54dad79c1e9a650dd95acea2cae6940d.jpg" style="width:100%">
+            <img class="mySlides" src="Imagens/Legendas-para-fotos-com-paisagens-02-740x522.jpg" style="width:100%">
+          </div>
+          
+          <div class="w3-center">
+            <div class="w3-section">
+              <button class="w3-btn" onclick="plusDivs(-1)">❮ Prev</button>
+              <button class="w3-btn" onclick="plusDivs(1)">Next ❯</button>
+            </div>
+           
+          </div>
+          
+        </div>
+         
+        <div class="content">
+          <p>Digite o Valor que Deseja Calcular Tabuada 0 ao 10</p>
+          <p><input  id="valor">
+            <button type="button" value="Calcular" onclick="calcular()">CALCULAR</button>
+        </p>
+        <div id="resultado">
+        </div>
+         
+      </div>
+    </div>
+    <script src="Exempl.js"></script>
+  </body>
+</html>
